@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Jua&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+
+/********************************vue-index.html (accueil)****************************************/
+
+/*header
+.header{
+    display: flex;
+    flex-direction: column;
+    background:url('/media/image/fond-header.png');
+    background-size: cover;
+    background-position: center;
+    height:9805px;
+    background-repeat: no-repeat;
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.logo h1{
+    font-family:'Jua',sans-serif ;
+
+}
+
+.onglets a {
+    text-decoration: none;
+    font-family: 'Jua',sans-serif;
+    font-size: x-large;
+    color: white;
+    padding: 12px;
+}
+
+.onglets a:hover{
+    text-decoration: underline;
+}
+*/
+
+
+/*main : 3 sections + btn Parcourir */
+/*Section 1 : bienvenu */
+section.main_bienvenue {
+    height: 980px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../media/image/img-bienvenue.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenu_bienvenue{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(83 57 23 / 45%);
+    width: 960px;
+    height: 980px;
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(218,147,53,0.225);
+}
+
+
+
+/*bouton Parcourir + menu */
+.main_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.parcourir {
+    display: flex;
+    flex-direction: column;
+}
+.main_btn button{
+    transition-duration: 0.4s;
+    background-color:  #070707c4;
+    color: white;
+    border: 2px solid #00000000;
+    height: 80px;
+    font-family: 'Jua';
+    font-size: xxx-large;
+}
+
+.main_btn button:hover{
+    background-color: #ffc107;
+    color: white;
+    border: 2px 0px solid #030303a8;
+}
+
+/*Section 1 : bouton icone menu*/
+
+.main_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} 
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.items{
+    background-color: black;
+    display: flex;
+    padding: 180px;
+}
+
+.items:hover{
+    background-color: #ffc107;
+    opacity: 60%;
+}
+
+.items a {
+    color: white;;
+}
+
+
+/*Section 2 : plat vedette */
+.main_plat_vedette{
+    height: 980px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #2f4f4f6b;
+}
+.main_titre{
+    width: 980px;
+}
+.main_titre h2{
+    padding-top: 20px;
+    font-family: 'Jua',sans-serif;
+    text-transform: uppercase;
+    font-size: xx-large;
+    text-align: center;
+}
+
+
+
+/* slide */
+.contener_slideshow
+{
+    background-color: black;
+    width: 960px;
+    height: 980px;
+    overflow: hidden;
+    position: relative;
+
+}
+.contener_slideshow img{
+    height: 980px;
+}
+
+.contener_slide
+{
+
+      width: 1920px;
+      height: 650px;
+      left: 0px;
+      position: absolute;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-name: anim_slide;
+}
+
+@keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-610px;}
+  45% {left:-610px;}
+  66% {left:-1220px;}
+  90% {left:-1220px;}
+}
+
+
+.slid_1, .slid_2, .slid_3
+{
+    position: absolute;
+    width: 1920px;
+    height: 975px; 
+}
+
+
+.slid_1{left: 25px;
+}
+.slid_2{
+    left: 1000px;
+}
+.slid_3{
+    left: 1975px;
+}
+
+/*bouton  menu ( + voir .main_btn) */
+.footer_pv{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    background-color: darkslategrey;
+}
+
+.container_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#btn_menu{
+    transition-duration: 0.4s;
+    background-color: darkslategrey;
+    color: white;
+    border: 2px solid #00000000;
+    height: 180px;
+    font-family: 'Jua';
+    font-size: xxx-large;
+    box-shadow: 5px -3px 5px 1px #1d2d20e6;
+}
+
+#btn_menu:hover{
+    background-color: #294545;
+    color: white;
+    border: 2px 0px solid #030303a8;
+}
+
+/*Section  3 : témoignage */
+
+.main_temoignage{
+    height: 980px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.contenu_temoignage {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    height: 980px;
+    align-items: center;
+    background: url(https://images.unsplash.com/photo-1592861956120-e524fc739696?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+
+.box_temoignage {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center ;
+    background: rgb(83 57 23 / 45%);
+    width: 960px;
+    height: 980px;
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(218,147,53,0.225);
+    
+    
+
+}
+
+
+.avis_slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.avis_slide p{
+    font-family: 'Fugaz One',sans-serif;
+    font-size: x-large;
+}
+
+
+
+
+
+
+
+
+/*footer */
+footer{
+    background-color: #362f2f4d;
+    color: white;
+    height: 120px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    justify-content: center;
+    font-family: 'Jua',sans-serif;
+
+}
