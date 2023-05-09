@@ -1,6 +1,7 @@
 colo text voir menu back ground : #294545
 slide html/css : https://www.wifeo.com/code/31-simple-css-slideshow.html
 slide citation : https://codepen.io/nucliweb/pen/OJXYwm
+icone : https://icon-sets.iconify.design/teenyicons/instagram-outline/
 <!--Section 1 : 3 boutons icones -->
 <section class="main_menu">
     
@@ -122,3 +123,5 @@ slide citation : https://codepen.io/nucliweb/pen/OJXYwm
         </div>
     </div> 
 -->
+
+
