@@ -13,7 +13,6 @@
   <title>Fast Food Light</title>
 </head>
 
-
 <body>
   <!--Barre de menu : verticale -->
   <div id="mySidenav" class="sidenav">
@@ -32,13 +31,13 @@
       <span class="iconify" data-icon="mdi:smiley-happy-outline" style="color: white;padding-left: 28px;"
         data-width="28" data-height="28"></span>
     </a>
+
     <a href="vues/vue-contact.html" id="contact">Contact
       <span class="iconify" data-icon="material-symbols:contact-support-outline" style="color: white;padding-left: 2px;"
-        data-width="29" data-height="29"></span>
+        data-width="29" data height="29"></span>
     </a>
   </div>
   <!---->
-
   <!--header vues : navbar + onglets + logo-->
   <header>
     <div class="header">
@@ -47,8 +46,6 @@
         <div class="logo">
           <h1> FastFood Light </h1>
         </div>
-
-
         <div class="onglets">
           <a href="index.html">Accueil</a>
           <a href="vues/vue-menu.html">Nos Menus</a>
@@ -56,64 +53,47 @@
           <a href="vues/vue-horaire.html"> Horaire</a>
         </div>
         <!---->
-
         <!--Barre de menu : horizontale (version mobile) -->
         <div id="myNav" class="overlay">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div class="overlay-content">
             <div class="onglets-verticale">
-            <a href="index.html">Accueil</a>
-            <a href="vues/vue-menu.html">Nos Menus</a>
-            <a href="vues/vue-contact.html"> Contact</a>
-            <a href="vues/vue-horaire.html"> Horaire</a>
+              <a href="index.html">Accueil</a>
+              <a href="vues/vue-menu.html">Nos Menus</a>
+              <a href="vues/vue-contact.html"> Contact</a>
+              <a href="vues/vue-horaire.html"> Horaire</a>
             </div>
-              <!--barre de menu verticale (version mobile ) -->
-          <section class="main_sidenav">
-
-            <div class="icone">
-              <div class="items">
-                <a href="vues/vue-menu.html#burger">
-                  <span class="iconify" data-icon="solar:gallery-bold-duotone" style="color: white;" data-width="50"
-                    data-height="50"></span>
-
-                </a>
-              </div>
-
+            <!--barre de menu verticale (version mobile ) -->
+            <section class="main_sidenav">
               <div class="icone">
-                <a href="vues/vue-menu.html#accompagnement">
-                  <span class="iconify" data-icon="fluent-mdl2:reservation-orders" style="color: white;" data-width="50"
-                    data-height="50"></span>
-
-                </a>
+                <div class="items">
+                  <a href="vues/vue-menu.html#burger"><span class="iconify" data-icon="solar:gallery-bold-duotone"
+                      style="color: white;" data-width="50" data-height="50"></span></a>
+                </div>
+                <div class="icone">
+                  <a href="vues/vue-menu.html#accompagnement"><span class="iconify"
+                      data-icon="fluent-mdl2:reservation-orders" style="color: white;" data-width="50"
+                      data-height="50"></span></a>
+                </div>
+                <div class="icone">
+                  <a href="vues/vue-menu.html#dessert"><span class="iconify" data-icon="mdi:smiley-happy-outline"
+                      style="color: white;" data-width="50" data-height="50"></span></a>
+                </div>
+                <div class="icone">
+                  <a href="vues/vue-contact.html"><span class="iconify"
+                      data-icon="material-symbols:contact-support-outline" style="color: white;" data-width="50"
+                      data-height="50"></span></a>
+                </div>
               </div>
-
-              <div class="icone">
-                <a href="vues/vue-menu.html#dessert">
-                  <span class="iconify" data-icon="mdi:smiley-happy-outline" style="color: white;" data-width="50"
-                    data-height="50"></span>
-                </a>
-              </div>
-
-              <div class="icone">
-                <a href="vues/vue-contact.html">
-                  <span class="iconify" data-icon="material-symbols:contact-support-outline" style="color: white;"
-                    data-width="50" data-height="50"></span>
-                </a>
-              </div>
-            </div>
-          </section>
-          <!---->
+            </section>
+            <!---->
           </div>
-        
         </div>
-
         <span style="font-size:30px;cursor:pointer" class="openbtn" onclick="openNav()">&#9776;</span>
       </div>
       <!---->
     </div>
   </header>
-
-
   <!--main - 3 sections: -->
   <main>
     <!-- Bouton parcourir-->
@@ -121,85 +101,57 @@
       <div class="parcourir">
         <button type="submit" href="#btn_parcourir">Bienvenue !</button>
       </div>
-
     </div>
-
-
     <!--Section 2 : plat vedette -->
     <section class="main_plat_vedette">
       <div class="main_titre">
         <h2>Nos plats vedettes</h2>
-        <p>Nous sommes ravis de vous presenter quelqu'uns de nos plats favoris qui sont surs de vous plaire</p>
+        <p>
+          Les plats en vedette de cette semaine sont disponibles ! Ne les manquez pas !
+        </p>
         <form method="get" action="vues/vue-galerie.html">
           <button type="submit">Voir plus </button>
         </form>
       </div>
-
       <!--slide-->
       <div class="contener_slideshow">
         <div class="contener_slide">
-          <div class="slid_1"> <img src="media/image/bg-1.jpg" alt="img_plat-1" /></div>
-          <div class="slid_2"> <img src="media/image/bg-2.jpg" alt="img_plat-2" /></div>
-          <div class="slid_3"><img src="media/image/bg-3.jpg" alt="img_plat-3" /></div>
+          <div class="slid_1">
+            <img src="media/image/pizza.jpg" alt="img_plat-1" />
+          </div>
+          <div class="slid_2">
+            <img src="media/image/panini.jpg" alt="img_plat-2" />
+          </div>
+          <div class="slid_3">
+            <img src="media/image/burger.jpg" alt="img_plat-3" />
+          </div>
         </div>
       </div>
-
     </section>
     <!---->
-
-
-
     <!--Section 3 : temoignage -->
     <section class="main_temoignage">
       <div class="contenu_temoignage">
         <div class="box_temoignage">
           <h2> Vos temoignages</h2>
           <div class="messagedefilant">
-
             <div>
-              <span>"Je recommande à venir en famille ou netre amis" .Json "Ceci est un test" K.Wilson "Nous sommes la "
-                T.Monal</span>
+              <span>"Je recommande à venir en famille ou netre amis" .Json "Ceci est un test" K.Wilson "Nous sommes la
+                "T.Monal</span>
             </div>
           </div>
           <div class="txt_temoignage">
-            <p>Votre avis compte pour nous , n'hesiter pas à laisser un avis sur nos plats </p>
+            <p>
+              Votre avis compte pour nous , n'hesiter pas à laisser un avis sur nos plats
+            </p>
             <form method="get" action="vues/vue-avis.html">
               <button type="submit" src="vues/vue-menu.html">Voir plus </button>
             </form>
           </div>
         </div>
-
       </div>
       </div>
     </section>
-    <!--
-
-    <section class="main_avis">
-      <div class="contenu_avis">
-        <div class="avis_temoignage">
-          <p class="item-1">This is your last chance. After this, there is no turning back.</p>
-
-          <p class="item-2">You take the blue pill - the story ends, you wake up in your bed and believe whatever you
-            want to believe.</p>
-
-          <p class="item-3">You take the red pill - you stay in Wonderland and I show you how deep the rabbit-hole
-            goes.
-          </p>
-
-
-
-        </div>
-      </div>
-    </section>
--->
-
-
-    <!---->
-
-
-
-
-
 
     <!--footer-->
     <footer>
@@ -212,11 +164,12 @@
           <span class="iconify" data-icon="ion:logo-tiktok" style="color: white;" data-width="45"
             data-height="45"></span>
         </div>
-        <p> Copyright 2023 - RStella </p>
+        <p>
+          Copyright 2023 - RStella
+        </p>
       </div>
     </footer>
     <!---->
-
     </div>
   </main>
 </body>

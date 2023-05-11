@@ -1,156 +1,122 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- lien feuille de style + font  -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-   <!-- lien script js + icone -->
-    <script src="../assets/js/script.js"></script>
-   <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-    <!--titre-->
-    <title>Fast Food Light</title>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- lien feuille de style + font  -->
+		<link rel="stylesheet" href="../assets/css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+		<!-- lien script js + icone -->
+		<script src="../assets/js/script.js"></script>
+		<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+		<!--titre-->
+		<title>Fast Food Light</title>
+	</head>
+	<body>
+		<!--Barre de menu : verticale -->
+		<div id="mySidenav" class="sidenav">
+			<a href="vue-galerie.html" id="about">Galerie<span class="iconify" data-icon="solar:gallery-bold-duotone" style="color: white;padding-left: 4px;"data-width="28" data-height="28"></span></a>
+			<a href="vue-reservation.html" id="blog">Réserve<span class="iconify" data-icon="fluent-mdl2:reservation-orders" style="color: white;" data-width="28"data-height="28"></span></a>
+			s
+			<a href="vue-avis.html" id="projects">Avis<span class="iconify" data-icon="mdi:smiley-happy-outline" style="color: white;padding-left: 28px;"data-width="28" data-height="28"></span></a>
+			<a href="vue-contact.html" id="contact">Contact<span class="iconify" data-icon="material-symbols:contact-support-outline" style="color: white;padding-left: 2px;"data-width="29" data-height="29"></span></a>
+		</div>
+		<!---->
+		<!--header vues : navbar + onglets + logo-->
+		<header>
+			<div class="header_contact">
+				<div class="navbar">
+					<div class="logo">
+						<h1 > FastFood Light </h1>
+					</div>
+					<div class="onglets">
+						<a href="../index.html">Accueil</a>
+						<a href="vue-menu.html">Nos Menus</a>
+						<a href="vue-contact.html"> Contact</a>
+						<a href="vue-horaire.html"> Horaire</a>
+					</div>
+					<!--Barre de menu : horizontale (version mobile) -->
+					<div id="myNav" class="overlay">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+						<div class="overlay-content">
+							<div class="onglets-verticale">
+								<a href="../index.html">Accueil</a>
+								<a href="vue-menu.html">Nos Menus</a>
+								<a href="vue-contact.html"> Contact</a>
+								<a href="vue-horaire.html"> Horaire</a>
+							</div>
+							<!--barre de menu verticale (version mobile ) -->
+							<section class="main_sidenav">
+								<div class="icone">
+									<div class="items">
+										<a href="vues/vue-menu.html#burger"><span class="iconify" data-icon="solar:gallery-bold-duotone" style="color: white;" data-width="50"data-height="50"></span></a>
+									</div>
+									<div class="icone">
+										<a href="vues/vue-menu.html#accompagnement"><span class="iconify" data-icon="fluent-mdl2:reservation-orders" style="color: white;" data-width="50"data-height="50"></span></a>
+									</div>
+									<div class="icone">
+										<a href="vues/vue-menu.html#dessert"><span class="iconify" data-icon="mdi:smiley-happy-outline" style="color: white;" data-width="50"data-height="50"></span></a>
+									</div>
+									<div class="icone">
+										<a href="vues/vue-contact.html"><span class="iconify" data-icon="material-symbols:contact-support-outline" style="color: white;"data-width="50" data-height="50"></span></a>
+									</div>
+								</div>
+							</section>
+							<!---->
+						</div>
+					</div>
+					<span style="font-size:30px;cursor:pointer" class="openbtn" onclick="openNav()">&#9776;</span>
+				</div>
+				<!---->
+			</div>
+		</header>
+		<!---->
 
-<body>
-  
-     <!--Barre de menu : verticale -->
-  <div id="mySidenav" class="sidenav">
+    
+		<!------main contact ------>
+		<main class="main">
+      
+			<div class="titre_vue">
+				<h2>Nous contacter</h2>
+			</div>
+      
+			<section class="main_contact">
+          <!--contenu contact-->
+				<div class="contenu_contact">
+					<div class="txt_contact">
+						<h3>Adresse </h3>
+						<p>
+							 120 des torticolis 
+						</p>
+						<h3>Telephone </h3>
+						<p>
+							 01.65.23.25.42
+						</p>
+					</div>
+          <!--carte interactive-->
+					<div class="maps_contact">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d674391.9523743067!2d1.843332174603681!3d48.679795681318524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5e1c403a68c17%3A0x10b82c3688b2570!2s%C3%8Ele-de-France!5e0!3m2!1sfr!2sfr!4v1683019801551!5m2!1sfr!2sfr" width="800" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!---->
 
-    <a href="vue-galerie.html" id="about">Galerie
-      <span class="iconify" data-icon="solar:gallery-bold-duotone" style="color: white;padding-left: 4px;"
-        data-width="28" data-height="28"></span>
-    </a>
-
-    <a href="vue-reservation.html" id="blog">Réserve
-      <span class="iconify" data-icon="fluent-mdl2:reservation-orders" style="color: white;" data-width="28"
-        data-height="28"></span>
-    </a>
-s
-    <a href="vue-avis.html" id="projects">Avis
-      <span class="iconify" data-icon="mdi:smiley-happy-outline" style="color: white;padding-left: 28px;"
-        data-width="28" data-height="28"></span>
-    </a>
-    <a href="vue-contact.html" id="contact">Contact
-      <span class="iconify" data-icon="material-symbols:contact-support-outline" style="color: white;padding-left: 2px;"
-        data-width="29" data-height="29"></span>
-    </a>
-  </div>
-  <!---->
-
-   <!--header vues : navbar + onglets + logo-->
-   <header>
-    <div class="header_contact">
-        <div class="navbar"> 
-            <div class="logo">
-            <h1 > FastFood Light </h1>
-            </div>           
-
-          
-            <div class="onglets"> 
-                <a href="../index.html">Accueil</a>
-                <a href="vue-menu.html">Nos Menus</a>
-                <a href="vue-contact.html"> Contact</a>   
-                <a href="vue-horaire.html"> Horaire</a>     
-            </div>
-          
-              
-  <!--Barre de menu : horizontale (version mobile) -->
-        <div id="myNav" class="overlay">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div class="overlay-content">
-            <div class="onglets-verticale">
-            <a href="../index.html">Accueil</a>
-            <a href="vue-menu.html">Nos Menus</a>
-            <a href="vue-contact.html"> Contact</a>
-            <a href="vue-horaire.html"> Horaire</a>
-            </div>
-              <!--barre de menu verticale (version mobile ) -->
-          <section class="main_sidenav">
-
-            <div class="icone">
-              <div class="items">
-                <a href="vues/vue-menu.html#burger">
-                  <span class="iconify" data-icon="solar:gallery-bold-duotone" style="color: white;" data-width="50"
-                    data-height="50"></span>
-
-                </a>
-              </div>
-
-              <div class="icone">
-                <a href="vues/vue-menu.html#accompagnement">
-                  <span class="iconify" data-icon="fluent-mdl2:reservation-orders" style="color: white;" data-width="50"
-                    data-height="50"></span>
-
-                </a>
-              </div>
-
-              <div class="icone">
-                <a href="vues/vue-menu.html#dessert">
-                  <span class="iconify" data-icon="mdi:smiley-happy-outline" style="color: white;" data-width="50"
-                    data-height="50"></span>
-                </a>
-              </div>
-
-              <div class="icone">
-                <a href="vues/vue-contact.html">
-                  <span class="iconify" data-icon="material-symbols:contact-support-outline" style="color: white;"
-                    data-width="50" data-height="50"></span>
-                </a>
-              </div>
-            </div>
-          </section>
-          <!---->
-          </div>
-        
-        </div>
-
-        <span style="font-size:30px;cursor:pointer" class="openbtn" onclick="openNav()">&#9776;</span>
-      </div>
-      <!---->
-    </div> 
-</header>
-   <!---->
-
-<!------main contact ------>
-<main class="main">
-   <div class="titre_vue">
-        <h2>Nous contacter</h2>
-    </div>
-<section class="main_contact">
-  
-<div class="contenu_contact">
-  <div class="txt_contact">
-    <h3>Adresse </h3>
-    <p> 120 des torticolis </p>
-    <h3>Telephone </h3>
-        <p> 01.65.23.25.42</p>
-</div>
-  
-<div class="maps_contact">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d674391.9523743067!2d1.843332174603681!3d48.679795681318524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5e1c403a68c17%3A0x10b82c3688b2570!2s%C3%8Ele-de-France!5e0!3m2!1sfr!2sfr!4v1683019801551!5m2!1sfr!2sfr" width="800" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-</div>
-</section>
-</main>
- <!---->
-
- <!--footer-->
-    <footer>
-      <div class="footer">
-        <div class="lien_reseaux">
-          <span class="iconify" data-icon="teenyicons:instagram-outline" style="color: white;" data-width="45"
-            data-height="45"></span>
-          <span class="iconify" data-icon="lucide:facebook" style="color: white;" data-width="45"
-            data-height="45"></span>
-          <span class="iconify" data-icon="ion:logo-tiktok" style="color: white;" data-width="45"
-            data-height="45"></span>
-        </div>
-        <p> Copyright 2023 - RStella </p>
-      </div>
-    </footer>
-    <!---->
-</body>
+    
+		<!--footer-->
+		<footer>
+			<div class="footer">
+				<div class="lien_reseaux">
+					<span class="iconify" data-icon="teenyicons:instagram-outline" style="color: white;" data-width="45"data-height="45"></span>
+					<span class="iconify" data-icon="lucide:facebook" style="color: white;" data-width="45"data-height="45"></span>
+					<span class="iconify" data-icon="ion:logo-tiktok" style="color: white;" data-width="45"data-height="45"></span>
+				</div>
+				<p>
+					 Copyright 2023 - RStella 
+				</p>
+			</div>
+		</footer>
+		<!---->
+	</body>
 </html>

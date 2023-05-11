@@ -12,9 +12,7 @@ body {
 }
 
 /*--------------------------------------------------------------------------------------*/
-
 /*)___________________________ css sur tout les pages ____________________________*/
-
 /*barre de  navigation : logo + titre */
 .navbar {
   display: flex;
@@ -26,7 +24,6 @@ body {
 
 .logo h1 {
   font-family: 'Jua', sans-serif;
-
 }
 
 .onglets a {
@@ -39,12 +36,6 @@ body {
 
 .onglets a:hover {
   text-decoration: underline;
-}
-
-.footer p {
-
-  font-family: 'Jua', sans-serif;
-
 }
 
 .sidenav {
@@ -61,18 +52,13 @@ body {
   transition: 0.3s;
   /* Add transition on hover */
   padding: 13px;
-  /* 15px padding */
   width: 100px;
-  /* Set a specific width */
   text-decoration: none;
-  /* Remove underline */
   font-size: 20px;
   /* Increase font size */
   color: white;
-  /* White text color */
   border-radius: 0 5px 5px 0;
   /* Rounded corners on the top right and bottom right side */
-
 }
 
 #mySidenav a:hover {
@@ -104,9 +90,34 @@ body {
 }
 
 
+/*header*/
+.header {
+  display: flex;
+  flex-direction: column;
+  background: url("/media/image/fond-header.png");
+  background-position: center;
+  height: 875px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
+/*footer */
+.footer {
+  background-color: #362f2f4d;
+  color: white;
+  height: 100px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: x-large;
+  justify-content: space-between;
+}
 
+.footer p {
+  font-family: 'Jua', sans-serif;
+}
 
 /* main sur toute les pages à part la page index  */
 .main {
@@ -117,11 +128,14 @@ body {
   background: url(https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 /* menu version mobile cachée sur la version ordinateur */
 .overlay {
+  display: none;
+}
+
+.main_sidenav {
   display: none;
 }
 
@@ -131,40 +145,7 @@ body {
 
 /*)___________________________index.html (accueil)____________________________*/
 /*--------------------------------------------------------------------------------------*/
-
 /*main : 3 sections + btn Parcourir */
-/*header*/
-.header {
-  display: flex;
-  flex-direction: column;
-  background: url(../../media/image/fond-header.png);
-  background-size: cover;
-  background-position: center;
-  height: 875px;
-  background-repeat: no-repeat;
-}
-
-/*Section 1  pop up : bienvenue 
-section.main_bienvenue {
-  height: 980px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  background-image: url(https://images.unsplash.com/photo-1561758033-d89a9ad46330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-.titre_bienvenue {
-  font-size: 80px;
-  font-family: 'Jua', sans-serif;
-}
-*/
-
-
 /*bouton Parcourir + menu */
 .main_btn {
   display: flex;
@@ -249,21 +230,24 @@ section.main_bienvenue {
   ;
 }
 
-
 /* slide */
+/* contenu du slide */
 .contener_slideshow {
   background-color: black;
   width: 960px;
   height: 985px;
   overflow: hidden;
+  /*cache les élements qui dépassent le contenut */
   position: relative;
-
 }
 
+
+/* modifiacation de la hauteur des images */
 .contener_slideshow img {
-  height: 980px;
+  height: 983px;
 }
 
+/*contenu qui va permettre de réaliser le slide */
 .contener_slide {
 
   width: 960px;
@@ -275,6 +259,9 @@ section.main_bienvenue {
   animation-name: anim_slide;
 }
 
+
+/*création  d'une animation qui a pour clé "anim_slide"*/
+/* pourcentage correspondant à la progression de l'animation*/
 @keyframes anim_slide {
   0% {
     left: 0px;
@@ -301,7 +288,7 @@ section.main_bienvenue {
   }
 }
 
-
+/*taille des images dans le  contener_slide*/
 .slid_1,
 .slid_2,
 .slid_3 {
@@ -310,7 +297,7 @@ section.main_bienvenue {
   height: 975px;
 }
 
-
+/*position des images dans le slide */
 .slid_1 {
   left: 0px;
 }
@@ -323,8 +310,8 @@ section.main_bienvenue {
   left: 1920px;
 }
 
-/*Section  3 : témoignage */
 
+/*Section  3 : témoignage */
 .main_temoignage {
   height: 980px;
   display: flex;
@@ -344,7 +331,6 @@ section.main_bienvenue {
   background-position: top;
   background-repeat: no-repeat;
 }
-
 
 .box_temoignage {
   display: flex;
@@ -367,13 +353,11 @@ section.main_bienvenue {
   text-align: center;
 }
 
-
 .box_temoignage p {
   text-align: center;
   width: 730px;
   font-size: xx-large;
   font-family: 'Jua', sans-serif;
-
 }
 
 .box_temoignage button {
@@ -394,7 +378,6 @@ section.main_bienvenue {
   font-family: 'Jua', sans-serif;
   box-shadow: 2px 5px 2px 0px rgb(78 56 28 / 45%);
   text-shadow: 4px 3px 4px rgb(78 56 28 / 69%);
-
 }
 
 .txt_temoignage {
@@ -404,26 +387,43 @@ section.main_bienvenue {
   align-items: center;
 }
 
-
-
-/*footer */
-.footer {
-  background-color: #362f2f4d;
-  color: white;
-  height: 100px;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: x-large;
-  justify-content: space-between;
+/* Texte défilant */
+.messagedefilant {
+  display: block;
+  margin: 0px auto;
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+  max-width: 620px;
+  height: 10px;
+  font-family: 'Jua', sans-serif;
+  border: 1px solid rgb(83 57 23 / 45%);
+  box-shadow: 2px 3px 9px 2px rgb(83 57 23 / 45%);
+  padding: 50px;
+  font-size: 2rem;
+  white-space: nowrap;
 }
 
+.messagedefilant div {
+  position: absolute;
+  min-width: 100%;
+  /* au minimum la largeur du conteneur */
+}
 
+/* création + durée de l'animation */
+.messagedefilant div span {
+  animation: defilement 15s infinite linear;
 
+}
+  @keyframes defilement {
+    0% {
+      margin-left: 0;
+    }
 
-
-
+    100% {
+      margin-left: -100%;
+    }
+  }
 /********************************vue-menu.html****************************************/
 .header_menu {
   display: flex;
@@ -434,8 +434,6 @@ section.main_bienvenue {
   background-size: cover;
   height: 800px;
 }
-
-
 
 .main_menu {
   display: flex;
@@ -467,7 +465,6 @@ section.main_bienvenue {
   padding: 20px;
 }
 
-
 .titre_menu {
   display: flex;
   align-items: center;
@@ -490,7 +487,6 @@ section.main_bienvenue {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-bottom: 55px;
-
 }
 
 .main_plat {
@@ -499,7 +495,6 @@ section.main_bienvenue {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-bottom: 55px;
-
 }
 
 .main_dessert {
@@ -508,7 +503,6 @@ section.main_bienvenue {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-bottom: 55px;
-
 }
 
 .main_boisson {
@@ -517,7 +511,6 @@ section.main_bienvenue {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-bottom: 55px;
-
 }
 
 .contenu_menu {
@@ -528,9 +521,8 @@ section.main_bienvenue {
   background-color: #00000054;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: white;
-  /* padding-left: 10px; */
+  margin-left: 10px;
   margin-bottom: 50px;
-
 }
 
 .card_menu {
@@ -543,7 +535,6 @@ section.main_bienvenue {
 .img_menu {
   display: flex;
   overflow: hidden;
-
 }
 
 .img_menu img {
@@ -555,8 +546,6 @@ section.main_bienvenue {
 .img_menu:hover img {
   transform: scale(1.2);
 }
-
-
 
 .description_menu {
   display: flex;
@@ -571,8 +560,6 @@ section.main_bienvenue {
   flex-direction: row;
   justify-content: center;
 }
-
-
 
 .filterDiv {
   display: none;
@@ -605,9 +592,6 @@ section.main_bienvenue {
   color: white;
 }
 
-
-
-
 @media only screen and (max-width : 767px) {
   .header_menu {
     display: flex;
@@ -618,14 +602,9 @@ section.main_bienvenue {
     background-size: auto;
     height: 500px;
   }
-
 }
 
-
-
 /********************************vue-contact.html****************************************/
-
-
 .header_contact {
   display: flex;
   flex-direction: column;
@@ -683,12 +662,9 @@ section.main_bienvenue {
 .txt_contact p {
   font-size: larger;
   font-family: 'Jua';
-
 }
 
-
 /********************************vue-horaire.html****************************************/
-
 .header_horaire {
   display: flex;
   flex-direction: column;
@@ -701,7 +677,6 @@ section.main_bienvenue {
 .img_horaire {
   margin-top: 30px;
   margin-bottom: 30px;
-
 }
 
 .img_horaire img {
@@ -709,33 +684,12 @@ section.main_bienvenue {
   width: 740px;
 }
 
-.main_sidenav {
-  display: none;
-}
-
-
-
-/********************************vue-galerie.html****************************************/
-
-.header_galerie {
-  display: flex;
-  flex-direction: column;
-  background: url(/../../media/image/bg-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 800px;
-}
-
-
-
-
 
 
 
 /* version mobile */
 @media only screen and (max-width : 767px) {
 
-  /*______________________________________test------------------*/
   /*_______________________base _________________________________*/
   /*header */
   .header {
@@ -757,7 +711,6 @@ section.main_bienvenue {
     align-items: center;
     color: white;
   }
-
 
   #mySidenav {
     display: none;
@@ -781,10 +734,8 @@ section.main_bienvenue {
   }
 
   a.closebtn:hover {
-
     text-decoration: none;
   }
-
 
   .overlay {
     height: 100%;
@@ -816,14 +767,11 @@ section.main_bienvenue {
     justify-content: space-between;
   }
 
-
   .overlay a {
     font-size: 40px;
     font-family: 'Jua', sans-serif;
     color: white;
     text-decoration: none;
-
-
   }
 
   .overlay a:hover,
@@ -836,9 +784,7 @@ section.main_bienvenue {
     font-size: 40px;
     top: 15px;
     right: 35px;
-
   }
-
 
   .titre_vue h2 {
     display: flex;
@@ -850,15 +796,9 @@ section.main_bienvenue {
     text-shadow: 0px 0px 10px white;
     text-align: center;
     color: white;
-
   }
 
-
-
-
-
   /*___________sidenav verticale____________*/
-
   .main_sidenav {
     display: flex;
     flex-direction: row;
@@ -878,22 +818,6 @@ section.main_bienvenue {
     padding-left: 15px;
   }
 
-  .items#about :hover {
-    background-color: #2b785cd1;
-  }
-
-  #blog:hover {
-    background-color: #ffc10782;
-  }
-
-  #projects:hover {
-
-    background-color: #f4433670;
-  }
-
-  #contact:hover {
-    background-color: #5555558f;
-  }
 
   /*_____________________________________________________________index.html__________________________________________________*/
   /*__________  main  plat vedette _____________*/
@@ -932,7 +856,6 @@ section.main_bienvenue {
   .contener_slideshow {
     display: none;
   }
-
 
   /*___________main temoignage____________*/
   .main_temoignage {
@@ -981,18 +904,16 @@ section.main_bienvenue {
     width: 230px;
     font-size: x-large;
     font-family: 'Jua', sans-serif;
+  }
 
-    .txt_temoignage {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
+  .txt_temoignage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   /*___________________________________vue contact _____________________________________*/
-
   .header_contact {
     display: flex;
     flex-direction: column;
@@ -1001,8 +922,6 @@ section.main_bienvenue {
     background-size: cover;
     height: 425px;
   }
-
-
   .main_contact {
     height: 100%;
     display: flex;
@@ -1010,7 +929,6 @@ section.main_bienvenue {
     justify-content: center;
     color: white;
   }
-
   .contenu_contact {
     display: flex;
     flex-direction: row;
@@ -1031,7 +949,6 @@ section.main_bienvenue {
     box-shadow: 5px 1px 10px 5px black;
     height: 550px;
   }
-
   .txt_contact h3 {
     text-transform: uppercase;
     font-family: 'Jua', sans-serif;
@@ -1041,7 +958,6 @@ section.main_bienvenue {
   .txt_contact p {
     font-size: larger;
     font-family: 'Jua';
-
   }
 
   .maps_contact iframe {
@@ -1057,9 +973,7 @@ section.main_bienvenue {
     background-repeat: no-repeat;
     background-size: cover;
     height: 375px;
-
   }
-
 
   .img_horaire {
     display: flex;
@@ -1075,56 +989,6 @@ section.main_bienvenue {
 
 
 
-
-}
-
-
-
-
-/* Texte défilant */
-.messagedefilant {
-  display: block;
-  margin: 0px auto;
-  padding: 0;
-  overflow: hidden;
-  position: relative;
-  width: 50%;
-  max-width: 620px;
-  height: 10px;
-  font-family: 'Jua', sans-serif;
-  border: 1px solid rgb(83 57 23 / 45%);
-  box-shadow: 2px 3px 9px 2px rgb(83 57 23 / 45%);
-  padding: 50px;
-}
-
-.messagedefilant div {
-  position: absolute;
-  min-width: 100%;
-  /* au minimum la largeur du conteneur */
-}
-
-.messagedefilant div span,
-.messagedefilant div:after {
-  position: relative;
-  display: inline-block;
-  font-size: 2rem;
-  white-space: nowrap;
-  top: 0;
-}
-
-.messagedefilant div span {
-  animation: defilement 10s infinite linear;
-}
-
-@keyframes defilement {
-  0% {
-    margin-left: 0;
-  }
-
-  100% {
-    margin-left: -100%;
-  }
-
   /*___________________________________vue menu _____________________________________*/
   .main_menu {
     display: flex;
@@ -1132,36 +996,35 @@ section.main_bienvenue {
     flex-direction: column;
     align-items: center;
     color: white;
-
     padding-bottom: 50px;
   }
-
   .main_menu p {
     text-align: center;
-
-
-    .main_entree {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      padding-bottom: 55px;
-    }
-
-    .contenu_menu {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: #00000054;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      color: white;
-      margin: 0;
-
-    }
-
-    .img_menu img {
-      width: 220px;
-
-    }
-
   }
+  .main_entree {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 55px;
+  }
+  .contenu_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000054;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    margin: 10px;
+  }
+  .img_menu img {
+    width: 220px;
+  }
+
+  #myBtnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}

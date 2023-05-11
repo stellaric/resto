@@ -1,0 +1,4 @@
+colo text voir menu back ground : #294545
+slide html/css : https://www.wifeo.com/code/31-simple-css-slideshow.html
+icone : https://icon-sets.iconify.design/teenyicons/instagram-outline/
+

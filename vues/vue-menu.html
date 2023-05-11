@@ -16,30 +16,18 @@
 <body>
   <!--Barre de menu : verticale -->
   <div id="mySidenav" class="sidenav">
-
-    <a href="vue-galerie.html" id="about">Galerie
-      <span class="iconify" data-icon="solar:gallery-bold-duotone" style="color: white;padding-left: 4px;"
-        data-width="28" data-height="28"></span>
-    </a>
-
-    <a href="vue-reservation.html" id="blog">Réserve
-      <span class="iconify" data-icon="fluent-mdl2:reservation-orders" style="color: white;" data-width="28"
-        data-height="28"></span>
-    </a>
-
-    <a href="vue-avis.html" id="projects">Avis
-      <span class="iconify" data-icon="mdi:smiley-happy-outline" style="color: white;padding-left: 28px;"
-        data-width="28" data-height="28"></span>
-    </a>
+    <a href="vue-galerie.html" id="about">Galerie<span class="iconify" data-icon="solar:gallery-bold-duotone"
+        style="color: white;padding-left: 4px;" data-width="28" data-height="28"></span></a>
+    <a href="vue-reservation.html" id="blog">Réserve<span class="iconify" data-icon="fluent-mdl2:reservation-orders"
+        style="color: white;" data-width="28" data-height="28"></span></a>
+    <a href="vue-avis.html" id="projects">Avis<span class="iconify" data-icon="mdi:smiley-happy-outline"
+        style="color: white;padding-left: 28px;" data-width="28" data-height="28"></span></a>
     <a href="vue-contact.html" id="contact">Contact
       <span class="iconify" data-icon="material-symbols:contact-support-outline" style="color: white;padding-left: 2px;"
         data-width="29" data-height="29"></span>
     </a>
   </div>
   <!---->
-
-
-
   <!--header vues : navbar + onglets + logo-->
   <header>
     <div class="header_menu">
@@ -48,8 +36,6 @@
         <div class="logo">
           <h1> FastFood Light </h1>
         </div>
-
-
         <div class="onglets">
           <a href="../index.html">Accueil</a>
           <a href="vue-menu.html">Nos Menus</a>
@@ -68,77 +54,61 @@
             </div>
             <!--barre de menu verticale (version mobile ) -->
             <section class="main_sidenav">
-
               <div class="icone">
                 <div class="items">
-                  <a href="vues/vue-menu.html#burger">
-                    <span class="iconify" data-icon="solar:gallery-bold-duotone" style="color: white;" data-width="50"
-                      data-height="50"></span>
-
-                  </a>
+                  <a href="vues/vue-menu.html#burger"><span class="iconify" data-icon="solar:gallery-bold-duotone"
+                      style="color: white;" data-width="50" data-height="50"></span></a>
                 </div>
-
                 <div class="icone">
-                  <a href="vues/vue-menu.html#accompagnement">
-                    <span class="iconify" data-icon="fluent-mdl2:reservation-orders" style="color: white;"
-                      data-width="50" data-height="50"></span>
-
-                  </a>
+                  <a href="vues/vue-menu.html#accompagnement"><span class="iconify"
+                      data-icon="fluent-mdl2:reservation-orders" style="color: white;" data-width="50"
+                      data-height="50"></span></a>
                 </div>
-
                 <div class="icone">
-                  <a href="vues/vue-menu.html#dessert">
-                    <span class="iconify" data-icon="mdi:smiley-happy-outline" style="color: white;" data-width="50"
-                      data-height="50"></span>
-                  </a>
+                  <a href="vues/vue-menu.html#dessert"><span class="iconify" data-icon="mdi:smiley-happy-outline"
+                      style="color: white;" data-width="50" data-height="50"></span></a>
                 </div>
-
                 <div class="icone">
-                  <a href="vues/vue-contact.html">
-                    <span class="iconify" data-icon="material-symbols:contact-support-outline" style="color: white;"
-                      data-width="50" data-height="50"></span>
-                  </a>
+                  <a href="vues/vue-contact.html"><span class="iconify"
+                      data-icon="material-symbols:contact-support-outline" style="color: white;" data-width="50"
+                      data-height="50"></span></a>
                 </div>
               </div>
             </section>
             <!---->
           </div>
-
         </div>
-
         <span style="font-size:30px;cursor:pointer" class="openbtn" onclick="openNav()">&#9776;</span>
       </div>
       <!---->
     </div>
   </header>
-
-
-
-
-
+  <!---->
+  <!--main: menu  -->
   <main class="main">
-
     <section class="main_menu">
       <h1>Nos menu</h1>
-      <p> Lceci est un test .</p>
+      <p>
+        Voici nos menu lectionner la catégorie .
+      </p>
 
+      <!--main: menu + filtre -->
       <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('entree')"> Entree</button>
+        <button class="btn active" onclick="filterSelection('all')"> Tous </button>
+        <button class="btn" onclick="filterSelection('entree')"> Entrée</button>
         <button class="btn" onclick="filterSelection('plat')"> Plat</button>
         <button class="btn" onclick="filterSelection('dessert')"> Dessert</button>
         <button class="btn" onclick="filterSelection('boisson')"> Boisson</button>
       </div>
     </section>
-
-
+    <!---->
 
     <!--Section  1 : entree -->
     <div class="filterDiv entree">
+      <!--filtre entree-->
       <div class="titre_menu">
         <h2> Entrée</h2>
       </div>
-
       <section class="main_entree">
         <div class="filterDiv entree ">
           <div class="contenu_menu">
@@ -147,94 +117,75 @@
             </div>
             <div class="description_menu">
               <h3>Salade</h3>
-              <p>3€30</p>
-            </div>
-            <div class="btn_menu">
-              <button class="btnAdd" id="0" onclick="addMenu(this)"> Voir plus </button>
-
+              <p>
+                3€30
+              </p>
             </div>
           </div>
         </div>
 
         <div class="filterDiv entree">
-
+          <!--filtre entree-->
           <div class="contenu_menu">
             <div class="img_menu">
-              <img src="../media/image/img_entree-2.jpg" alt="img-entree_1" />
+              <img src="../media/image/img_entree-2.jpg" alt="img-entree_2" />
             </div>
             <div class="description_menu">
-              <h3>Burger Veggie</h3>
-              <p>5€30</p>
-            </div>
-            <div class="btn_menu">
-              <button class="btnAdd" id="0" onclick="addMenu(this)"> Ajouter </button>
-
+              <h3>Mini Tacos</h3>
+              <p>
+                4€30
+              </p>
             </div>
           </div>
         </div>
 
-
-
         <div class="filterDiv entree">
+          <!--filtre entree-->
           <div class="contenu_menu">
             <div class="img_menu">
-              <img src="../media/image/img_entree-3.jpg" alt="img-entree_1" />
+              <img src="../media/image/img_entree-3.jpg" alt="img-entree_3" />
             </div>
             <div class="description_menu">
-              <h3>Burger Veggie</h3>
-              <p>5€30</p>
-            </div>
-            <div class="btn_menu">
-              <button class="btnAdd" id="0" onclick="addMenu(this)"> Ajouter </button>
-
+              <h3>Nuggets Ball</h3>
+              <p>
+                4€
+              </p>
             </div>
           </div>
         </div>
     </div>
     </section>
-
     <!---->
 
-
     <!--Section  2 : plat -->
+
     <div class="filterDiv plat">
+      <!--filtre plat-->
       <div class="titre_menu">
         <h2> Plat</h2>
       </div>
-
       <section class="main_plat">
-
-
-
-
         <div class="contenu_menu">
           <div class="img_menu">
-            <img src="../media/image/bg-1.jpg" alt="img-plat_1" />
+            <img src="../media/image/pizza.jpg" alt="img-plat_1" />
           </div>
           <div class="description_menu">
-            <h3>Burger Veggie</h3>
-            <p>5€30</p>
-          </div>
-          <div class="btn_menu">
-            <button class="btnAdd" id="0" onclick="addMenu(this)"> Ajouter </button>
-
-
+            <h3>Pizza</h3>
+            <p>
+              7€30
+            </p>
           </div>
         </div>
 
-
         <div class="contenu_menu">
           <div class="img_menu">
-            <img src="../media/image/bg-1.jpg" alt="img-plat_2" />
+            <img src="../media/image/bg-.jpg" alt="img-plat_2" />
           </div>
           <div class="description_menu">
-            <h3>Burger Veggie</h3>
-            <p>5€30</p>
-          </div>
-          <div class="btn_menu">
-            <button class="btnAdd" id="0" onclick="addMenu(this)"> Ajouter </button>
-
-
+            <h3>Burger</h3>
+            <p>
+              6€30
+            </p>
           </div>
         </div>
 
@@ -244,144 +195,109 @@
             <img src="../media/image/bg-1.jpg" alt="img-plat_3" />
           </div>
           <div class="description_menu">
-            <h3>Burger Veggie</h3>
-            <p>5€30</p>
-          </div>
-          <div class="btn_menu">
-            <button class="btnAdd" id="0" onclick="addMenu(this)"> Ajouter </button>
-
-
+            <h3>Panini</h3>
+            <p>
+              5€30
+            </p>
           </div>
         </div>
+      </section>
     </div>
-    </section>
-
     <!---->
 
-
     <!--Section  3 : dessert -->
-
     <div class="filterDiv dessert">
+      <!--filtre plat-->
       <div class="titre_menu">
         <h2> Dessert</h2>
       </div>
-
       <section class="main_dessert">
-
-
-
-
         <div class="contenu_menu">
           <div class="img_menu">
             <img src="../media/image/glace.jpg" alt="img-dessert_1" />
           </div>
           <div class="description_menu">
             <h3>Burger Veggie</h3>
-            <p>5€30</p>
+            <p>
+              5€30
+            </p>
           </div>
           <div class="btn_menu">
             <button class="btnAdd" id="0" onclick="addMenu(this)"> Ajouter </button>
-
-
           </div>
         </div>
-
-
         <div class="contenu_menu">
           <div class="img_menu">
             <img src="../media/image/donuts.jpg" alt="img-dessert_2" />
           </div>
           <div class="description_menu">
             <h3>Burger Veggie</h3>
-            <p>5€30</p>
+            <p>
+              5€30
+            </p>
           </div>
           <div class="btn_menu">
             <button class="btnAdd" id="0" onclick="addMenu(this)"> Ajouter </button>
-
-
           </div>
         </div>
-
-
         <div class="contenu_menu">
           <div class="img_menu">
             <img src="../media/image/tiramisu.jpg" alt="img-dessert_3" />
           </div>
           <div class="description_menu">
             <h3>Burger Veggie</h3>
-            <p>5€30</p>
+            <p>
+              5€30
+            </p>
           </div>
           <div class="btn_menu">
             <button class="btnAdd" id="0" onclick="addMenu(this)"> Ajouter </button>
-
-
           </div>
         </div>
     </div>
     </section>
-
     <!---->
-
     <!--Section  4 : boisson -->
-
     <div class="filterDiv boisson">
       <div class="titre_menu">
         <h2> Boisson</h2>
       </div>
-
       <section class="main_boisson">
-
-
-
-
         <div class="contenu_menu">
           <div class="img_menu">
             <img src="../media/image/img_entree-1.jpg" alt="img-boisson_1" />
           </div>
           <div class="description_menu">
-            <h3>Burger Veggie</h3>
-            <p>5€30</p>
-          </div>
-          <div class="btn_menu">
-            <button class="btnAdd" id="0" onclick="addMenu(this)"> Ajouter </button>
-
-
+            <h3>Mojito</h3>
+            <p>
+              5€30
+            </p>
           </div>
         </div>
-
-
         <div class="contenu_menu">
           <div class="img_menu">
             <img src="../media/image/img_entree-2.jpg" alt="img-boisson_2" />
           </div>
           <div class="description_menu">
             <h3>Burger Veggie</h3>
-            <p>5€30</p>
-          </div>
-          <div class="btn_menu">
-            <button class="btnAdd" id="0" onclick="addMenu(this)"> Voir plus </button>
-
-
+            <p>
+              5€30
+            </p>
           </div>
         </div>
-
-
         <div class="contenu_menu">
           <div class="img_menu">
             <img src="../media/image/img_entree-3.jpg" alt="img-boisson_3" />
           </div>
           <div class="description_menu">
             <h3>Burger Veggie</h3>
-            <p>5€30</p>
-          </div>
-          <div class="btn_menu">
-            <button class="btnAdd" id="0" onclick="addMenu(this)"> Ajouter </button>
-
+            <p>
+              5€30
+            </p>
           </div>
         </div>
     </div>
     </section>
-
     <!---->
   </main>
 
@@ -394,12 +310,12 @@
         <span class="iconify" data-icon="lucide:facebook" style="color: white;" data-width="45" data-height="45"></span>
         <span class="iconify" data-icon="ion:logo-tiktok" style="color: white;" data-width="45" data-height="45"></span>
       </div>
-      <p> Copyright 2023 - RStella </p>
+      <p>
+        Copyright 2023 - RStella
+      </p>
     </div>
   </footer>
   <!---->
-
-
 </body>
 
 </html>

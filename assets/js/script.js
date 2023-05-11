@@ -1,3 +1,5 @@
+//fonction qui permet d'ouvrir/fermer la barre de menu (version mobile )
+// le document prend pour élément l' id "myNav"  qui va modifier le style
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
 }
@@ -6,20 +8,31 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
-// ______________________________________
-filterSelection("all")
+// fonction qui permet de filter les menus ______________________________________*
 function filterSelection(c) {
-  var x, i;
+  //déclaration de la variable 
+  var x;
+  var i;
+  // x prend l'élément de la class "filterDiv"
   x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
+  //
+  if (c == "all") 
+    c = "";
+  // parcourir la longueur 
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
 }
 
+filterSelection("all")
+
+
+
 function w3AddClass(element, name) {
-  var i, arr1, arr2;
+  var i;
+  var arr1; 
+    var arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
